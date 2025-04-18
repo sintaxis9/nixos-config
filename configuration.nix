@@ -165,7 +165,7 @@
     gnucobol #COBOL
     rustc rust-analyzer rustup #RUST
     gcc cmake clang clang-tools gnumake gdb boost adolc cccc #C/C++
-    python39Full basedpyright  #python
+    (python311.withPackages (ps: with ps; [flask ipython mypy pyright basedpyright pip virtualenv])) #python
     jdk21 gradle jdt-language-server openjdk #java
     eslint javascript-typescript-langserver #JS
     R rstudio rPackages.ggplot2 rPackages.dplyr rPackages.xts #R
@@ -173,7 +173,7 @@
     terraform-ls terraform-local terraform-inventory terranix qemu-user virt-manager kvmtool virt-viewer #INF tools
     realvnc-vnc-viewer foreman ansible #INF tools
     kotlin kotlin-native kotlin-language-server android-studio android-tools qemu #androidweas
-    lshw htop unzip p7zip rar nmap lsof ldacbt qemu_kvm gns3-server usbutils pavucontrol bash lxd-lts killall #mngr
+    lshw htop unzip p7zip rar nmap lsof ldacbt qemu_kvm gns3-server usbutils pavucontrol bash lxd-lts killall bun #mngr
     nix-index #mngr
     mpv imv vlc libreoffice libao #media
     swaybg waypaper dolphin swappy waybar dunst xwayland rofi wofi#hypr
